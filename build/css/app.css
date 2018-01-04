@@ -128,6 +128,7 @@ html {
 
 a {
   text-decoration: none;
+  color: #0365aa;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -140,6 +141,7 @@ body {
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
   color: #000;
+  font-weight: 100;
 }
 
 .out {
@@ -147,6 +149,7 @@ body {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .content-block {
@@ -344,7 +347,7 @@ body {
 
 .header__link i {
   position: relative;
-  top: 2px;
+  top: 3px;
   margin-right: 5px;
 }
 
@@ -392,6 +395,127 @@ body {
 
 .header__nav a:hover {
   background: #b30133;
+}
+
+.footer {
+  background: #0365aa;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer__inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer__left, .footer__right {
+  -ms-flex-preferred-size: 278px;
+  flex-basis: 278px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.footer__center {
+  -ms-flex-preferred-size: 585px;
+  flex-basis: 585px;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  padding: 0 15px;
+}
+
+.footer__right {
+  padding-left: 15px;
+}
+
+.footer__right p {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer__right p:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer__logo {
+  font-size: 0;
+  margin-bottom: 22px;
+}
+
+.footer__logo a {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer__logo p {
+  margin-left: 9px;
+  margin-top: 13px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 1.1;
+}
+
+.footer__logo p span {
+  font-size: 22px;
+  text-align: center;
+}
+
+.footer__nav {
+  font-size: 0;
+  margin-bottom: 12px;
+}
+
+.footer__nav li {
+  display: inline-block;
+  vertical-align: top;
+  width: 47%;
+  margin-bottom: 8px;
+}
+
+.footer__nav li.is-active a:after {
+  width: 100%;
+}
+
+.footer__nav li a {
+  font-size: 16px;
+  position: relative;
+}
+
+.footer__nav li a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0;
+  bottom: -3px;
+  height: 1px;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+.footer__nav li a:hover:after {
+  width: 100%;
+}
+
+.footer__copy {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer__map {
+  height: 173px;
 }
 
 /*# sourceMappingURL=app.css.map */

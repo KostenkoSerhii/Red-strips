@@ -1,0 +1,83 @@
+.footer
+	background: $blue
+	color: $white
+	padding-top: 20px
+	padding-bottom: 30px
+
+	a
+		color: $white
+	&__inner
+		display: flex
+		justify-content: space-between
+	&__left, &__right
+		flex-basis: 278px
+		flex-shrink: 0
+	&__left
+	&__center
+		flex-basis: 585px
+		flex-grow: 0
+		flex-shrink: 1
+		padding: 0 15px
+	&__right
+		padding-left: 15px
+
+		p
+			margin-bottom: 16px
+			font-size: 16px
+			font-weight: 400
+			&:last-of-type
+				margin-bottom: 0
+	&__logo
+		font-size: 0
+		margin-bottom: 22px
+		a
+			display: inline-block
+			vertical-align: top
+		p
+			margin-left: 9px
+			margin-top: 13px
+			display: inline-block
+			vertical-align: top
+			font-size: 17px
+			font-weight: 700
+			text-align: center
+			+robc
+			line-height: 1.1
+			span
+				font-size: 22px
+				text-align: center
+	&__nav
+		font-size: 0
+		margin-bottom: 12px
+		li
+			display: inline-block
+			vertical-align: top
+			width: 47%
+			margin-bottom: 8px
+			&.is-active
+				a
+					&:after
+						width: 100%
+			a
+				font-size: 16px
+				position: relative
+				&:after
+					content: ''
+					position: absolute
+					left: 0
+					width: 0
+					bottom: -3px
+					height: 1px 
+					background: $white
+					
+					+trans
+				&:hover
+					&:after
+						width: 100%
+	&__copy
+		font-size: 16px
+		font-weight: 400
+	&__map
+		height: 173px
+		
+

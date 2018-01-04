@@ -1,15 +1,15 @@
 ---
 title: Index page
 ---
-{% extends "layouts/_layout.html" %}
-
+{% extends "layouts/_layout-map.html" %}
 {% block content %}
+{% include "partials/_header.html" %}
 <!--begin content-block-->
 <div class="content-block" {% if bgimg %} style="background-image: url(img/{{bgimg}});" {% endif %}>
-	{% include "partials/_header.html" %}
+
 </div>
 <!--end content-block-->
-
+{% include "partials/_footer.html" %}
 
 
 

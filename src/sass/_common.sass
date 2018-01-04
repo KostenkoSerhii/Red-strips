@@ -1,0 +1,75 @@
+=rob
+	font-family: 'Roboto', sans-serif
+=robc
+	font-family: 'Roboto Condensed', sans-serif;
+=lgb
+	@media only screen and (max-width: "1399px")
+		@content
+=lg
+	@media only screen and (max-width: "1199px")
+		@content
+=l
+	@media only screen and (max-width: "1023px")
+		@content
+=m
+	@media only screen and (max-width: "991px")
+		@content
+=xs
+	@media only screen and (max-width: "767px")
+		@content
+
+$black: #000
+$white: #fff
+$red: #e50443
+$red2: #e10048
+$red-d: #b30133
+$blue: #0365aa
+a
+	text-decoration: none
+h1, h2, h3, h4, h5, h6
+	font-weight: normal
+body
+	background: $white
+	line-height: 1.4
+	font-size: 18px
+	+rob
+	color: $black
+.out
+	display: flex
+	flex-direction: column
+.content-block
+	flex: 1
+.title-lg, .title-m, .title-sm, .title-line
+	line-height: 1
+.title-lg
+	color: $white
+	+robc
+	font-size: 36px
+	font-weight: 700
+.title-m
+	color: $red
+	+rob
+	font-size: 30px
+	font-weight: 100
+	strong
+		font-weight: 500
+.title-sm
+	color: $blue
+	+rob
+	font-size: 24px
+	font-weight: 500
+.title-line
+	color: $blue
+	+rob
+	font-size: 24px
+	font-weight: 500
+	padding-left: 112px
+	span
+		position: relative
+		&:before, &:after
+			content: ''
+			position: absolute
+			height: 1px
+			width: 2000px
+			background: $blue
+			bottom: 0

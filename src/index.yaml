@@ -1,0 +1,7 @@
+ProjectTitle: cashbot
+
+PageList:
+- file: page.html
+  ready: 50%
+- file: text-page.html
+  ready: 50%

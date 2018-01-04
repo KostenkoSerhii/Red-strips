@@ -1,0 +1,118 @@
+.header
+	padding-top: 14px
+	position: absolute
+	left: 0
+	top: 0
+	z-index: 3
+	width: 100%
+	min-height: 88px
+	overflow: hidden
+	.l
+		&:before, &:after
+			content: ''
+			position: absolute
+			bottom: 3px
+			height: 100%
+			background:  $red
+			width: 2000px
+			height: 35px
+			transform-origin: 50% 50%
+			transform: skew(25deg)
+			z-index: 1
+		&:before
+			right: 1154px
+		&:after
+			left: 415px
+	&__inner
+		+clr
+	&__logo
+		float: left
+		font-size: 0
+		padding-top: 5px
+		a
+			display: inline-block
+			vertical-align: top
+			padding-top: 2px
+		p
+			margin-left: 14px
+			display: inline-block
+			vertical-align: top
+			text-align: center
+			line-height: 1.1
+			+robc
+			font-weight: 700
+			font-size: 28px
+			color: $red2
+			span
+				font-size: 37px
+	&__right
+		float: right
+		width: 652px
+	&__top
+		display: flex
+		justify-content: space-between
+		margin-bottom: 10px
+	&__langs
+		font-size: 0
+		a
+			display: inline-block
+			vertical-align: top
+			width: 32px
+			height: 32px
+			border: 1px solid transparent
+			font-size: 18px
+			+robc
+			color: $black
+			text-align: center
+			padding-top: 3px
+			margin-right: 11px
+			&:last-of-type
+				margin-right: 0
+			&.is-active
+				color: $red2
+				border-color: $red
+				background-color: $white
+	&__link
+		font-weight: 300
+		margin-top: 3px
+		+robc
+		color: $black
+		i
+			position: relative
+			top: 2px
+			margin-right: 5px
+		svg
+			fill: $red
+			font-size: 19px
+	&__nav
+		font-size: 0
+		padding-left: 46px
+		position: relative
+		z-index: 2
+		li
+			display: inline-block
+			vertical-align: top
+			// margin-right: 26px
+			// &:last-of-type
+			// 	margin-right: 0
+			&.is-active
+				a
+					background: $red-d
+		a
+			font-weight: 300
+			color: $white
+			font-size: 18px
+			padding: 5px 35px
+			// background: $red
+			display: block
+			transform-origin: 50% 50%
+			transform: skew(25deg)
+			+trans
+			span
+				display: block
+				transform-origin: 50% 50%
+				transform: skew(-25deg)
+			&:hover
+				background: $red-d
+
+			

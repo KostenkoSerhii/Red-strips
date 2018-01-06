@@ -1,9 +1,74 @@
 ---
-title: Index page
+title: text page
+bgimg: 'contact-bg.jpg'
 ---
 {% extends "layouts/_layout.html" %}
-
 {% block content %}
 {% include "partials/_header.html" %}
+<!--begin content-block-->
+<div class="content-block content-block--p-t" {% if bgimg %} style="background-image: url(img/{{bgimg}});" {% endif %}>
+	<!--begin l-->
+	<div class="l">
+		<!--begin prod-->
+		<div class="prod-content">
+			<h1 class="title-m prod-content__title"><strong>Грипп А и В</strong></h1>
+			<!--begin prod-two-col-->
+			<div class="prod-two-col">
+				<!--begin prod-two-col__left-->
+				<div class="prod-two-col__left">
+					<img src="img/prod5.jpg" alt="alt">
+				</div>
+				<!--end prod-two-col__left-->
+				<!--begin prod-two-col__right-->
+				<div class="prod-two-col__right">
+					<div class="styled-text styled-text--it">
+						<p>Возбудителем гриппа является вирус, который поражает, главным образом, верхние дыхательные пути – нос, горло, бронхи, реже – легкие. Заболевание обычно длится одну-две недели и характеризуется высокой температурой, миалгией, головной болью, недомоганием, сухим кашлем, болью в горле и ринитом. Для детей, пожилых людей и людей, страдающих заболеваниями легких, почек, сердца, диабетом, раком, грипп представляет серьезную опасность. 
+						</p>
+					</div>
+					<div class="prod-content__text">
+						<p>Каждый тест «РЭД грипп А и В» предназначен для одного определения наличия вируса гриппа А и/или вируса гриппа В в респираторных выделениях человека.</p>
+						<p><strong>Чувствительность</strong> теста «РЭД грипп А и В» составляет<strong><br>>99% по вирусу типа А и 99% по вирусу типа В.</strong>.</p>
+						<p><strong>Специфичность</strong>теста «РЭД грипп А и В» составляет<strong> <br>>98% по вирусу типа А и 99% по вирусу типа В</strong>. </p>
+						<p><strong>Время проведения анализа – 10 мин.</strong></p>
+					</div>
+					<div class="prod-content__links">
+						<a class="prod-content__left-link icon-link" href="#">
+							<i class="file"></i>
+							<span>Инструкция</span>
+						</a>
+						<a class="prod-content__right-link icon-link" href="#">
+							<i class="diplom"></i>
+							<span>Регистрационное удостоверение</span>
+						</a>
+					</div>
+				</div>
+				<!--end prod-two-col__right-->
+			</div>
+			<!--end prod-two-col-->
+			<div class="prod-block">
+				<h2 class="title-line"><span>Порядок проведения теста</span></h2>
+				<!--begin prod-steps-->
+				<div class="prod-steps">
+					<!--begin prod-step-->
+					<div class="prod-step">
+						<div class="prod-step__img">
+							<img src="" alt="">
+						</div>
+					</div>
+					<!--end prod-step-->
+
+				</div>
+				<!--end prod-steps-->
+
+			</div>
+		</div>
+		<!--end prod-->
+	</div>
+	<!--end l-->
+</div>
+<!--end content-block-->
+{% include "partials/_footer.html" %}
+
+
 
 {% endblock %}

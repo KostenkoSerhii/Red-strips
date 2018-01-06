@@ -1,0 +1,78 @@
+---
+title: news page
+bgimg: 'contact-bg.jpg'
+---
+{% extends "layouts/_layout.html" %}
+{% block content %}
+{% include "partials/_header.html" %}
+<!--begin content-block-->
+<div class="content-block content-block--p-t" {% if bgimg %} style="background-image: url(img/{{bgimg}});" {% endif %}>
+	<!--begin l-->
+	<div class="l l--sm">
+		<h1 class="title-m"><strong>Новости</strong></h1>
+		<!--begin news-list-->
+		<div class="news-list">
+			<!--begin news-->
+			<a class="news" href="#">
+				<div class="news__img">
+					<img src="img/news1.jpg" alt="alt">
+				</div>
+				<div class="news__descr">
+					<p class="news__date">
+						<i class="decor-lines decor-lines--reverse"></i>
+						12.12.2017
+					</p>
+					<div class="styled-text styled-text--it">
+						<p>Отобраны и охарактеризованы специфические антитела для определения онкомаркеров патологий ЖКТ.  Синтезированы и проверены их конъюгаты с наномаркерами.
+						</p>
+					</div>
+				</div>
+			</a>
+			<!--end news-->
+			<!--begin news-->
+			<a class="news" href="#">
+				<div class="news__img">
+					<img src="img/news2.jpg" alt="alt">
+				</div>
+				<div class="news__descr">
+					<p class="news__date">
+						<i class="decor-lines decor-lines--reverse"></i>
+						12.10.2017
+					</p>
+					<div class="styled-text styled-text--it">
+						<p>ООО «РЭД» представило свою продукцию на Всероссийском ежегодном конгрессе "Инфекционные болезни у детей: диагностика, лечение и профилактика" 12 - 13 октября 2017 года в Санкт-Петербурге.
+						</p>
+					</div>
+				</div>
+			</a>
+			<!--end news-->
+			<!--begin news-->
+			<a class="news" href="#">
+				<div class="news__img">
+					<img src="img/news3.jpg" alt="alt">
+				</div>
+				<div class="news__descr">
+					<p class="news__date">
+						<i class="decor-lines decor-lines--reverse"></i>
+						1.08.2017
+					</p>
+					<div class="styled-text styled-text--it">
+						<p>Начата разработка новой линии продуктов для онкодиагностики – тест-полоски для определения маркеров CEA, СА 72-4 и СА 19-9.
+						</p>
+					</div>
+				</div>
+			</a>
+			<!--end news-->
+
+		</div>
+		<!--end news-list-->
+
+	</div>
+	<!--end l-->
+</div>
+<!--end content-block-->
+{% include "partials/_footer.html" %}
+
+
+
+{% endblock %}

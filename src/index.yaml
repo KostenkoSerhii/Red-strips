@@ -5,5 +5,7 @@ PageList:
   ready: 50%
 - file: contacts.html
   ready: 50%
+- file: news.html
+  ready: 50%
 - file: text-page.html
   ready: 50%

@@ -1,0 +1,41 @@
+.news-list
+	padding-bottom: 20px
+.news
+	display: block
+	margin-bottom: 50px
+	overflow: hidden
+	+clr
+	color: $black
+	+m
+		margin-bottom: 30px
+	&__img
+		float: left
+		font-size: 0
+		max-width: 263px
+		max-height: 136px
+		height: auto
+		+m
+			float: none
+			width: 100%
+			margin-bottom: 10px
+	&__descr
+		float: right
+		width: calc(100% - 316px)
+		padding-top: 20px
+		+m
+			float: none
+			width: 100%
+	&__date
+		margin-bottom: 15px
+		padding-left: 26px
+		position: relative
+		font-style: italic
+		.decor-lines
+			position: absolute
+			top: 5px
+			left: 0
+			transform: translateX(-50%)
+	.styled-text
+		&:before
+			bottom: auto
+			height: 300px

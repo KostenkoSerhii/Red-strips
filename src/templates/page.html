@@ -6,7 +6,218 @@ title: Index page
 {% include "partials/_header.html" %}
 <!--begin content-block-->
 <div class="content-block" {% if bgimg %} style="background-image: url(img/{{bgimg}});" {% endif %}>
-
+	{% include "partials/_hero.html" %}
+	<!--begin about-->
+	<div class="about">
+		<!--begin l-->
+		<div class="l">
+			<div class="about__inner">
+				<h2 class="title-m about__title">Немного <strong>о нас</strong></h2>
+				<img class="about__img" src="img/about-img.jpg" alt="alt" >
+				<div class="about__text styled-text">
+					<p>ООО "РЭД" – российский производитель медицинских экспресс-тестов. Компания основана в 2010 году. В тесном сотрудничестве с ведущими институтами РАН налажен выпуск быстрых тест-полосок для определения широкого круга антигенов различной природы. Внедрены строгие системы контроля качества на всех этапах производства, которые сводят к нулю количество брака продукции. Ассортимент насчитывает более 20 наименований простых и быстрых диагностических тестов для медицинского скрининга. Тесты основаны на принципе иммунохроматографии с использованием латексных и металлических наномаркеров. Вся продукция имеет соответствующие сертификаты и регистрационные удостоверения Федеральной службы по надзору в сфере здравоохранения.
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--end l-->
+	</div>
+	<!--end about-->
+	<!--begin advantages-->
+	<div class="advantages" style="background-image: url('img/adv-bg.jpg');">
+		<!--begin l-->
+		<div class="l">
+			<h2 class="title-m advantages__title"><strong>Преимущества</strong> тестов РЭД</h2>
+			<!--begin advantages__inner-->
+			<div class="advantages__inner">
+				<!--begin advantages__line-->
+				<div class="advantages__line">
+					<!--begin adv-block-->
+					<div class="adv-block" data-aos="fade-up" data-aos-once="true">
+						<div class="adv-block__img">
+							<img src="img/adv1.png" alt="alt">
+						</div>
+						<i class="decor-lines decor-lines--reverse adv-block__lines"></i>
+						<h3 class="title-xs adv-block__title">Малое время анализа</h3>
+						<p>продолжительность <br>
+						измерения 10 минут</p>
+					</div>
+					<!--end adv-block-->
+					<!--begin adv-block-->
+					<div class="adv-block" data-aos="fade-up" data-aos-once="true">
+						<div class="adv-block__img">
+							<img src="img/adv2.png" alt="alt">
+						</div>
+						<i class="decor-lines decor-lines--reverse adv-block__lines"></i>
+						<h3 class="title-xs adv-block__title">Простота использования</h3>
+						<p>все необходимые компоненты
+						в составе набора</p>
+					</div>
+					<!--end adv-block-->
+					<!--begin adv-block-->
+					<div class="adv-block" data-aos="fade-up" data-aos-once="true" >
+						<div class="adv-block__img">
+							<img src="img/adv3.png" alt="alt">
+						</div>
+						<i class="decor-lines decor-lines--reverse adv-block__lines"></i>
+						<h3 class="title-xs adv-block__title">Визуальный результат</h3>
+						<p>нет необходимости
+						в оборудовании</p>
+					</div>
+					<!--end adv-block-->
+				</div>
+				<!--end advantages__line-->
+				<!--begin advantages__line-->
+				<div class="advantages__line">
+					<!--begin adv-block-->
+					<div class="adv-block" data-aos="fade-up" data-aos-once="true">
+						<div class="adv-block__img">
+							<img src="img/adv4.png" alt="alt">
+						</div>
+						<i class="decor-lines decor-lines--reverse adv-block__lines"></i>
+						<h3 class="title-xs adv-block__title">Большой срок годности</h3>
+						<p>24 месяца без снижения
+						аналитических характеристик</p>
+					</div>
+					<!--end adv-block-->
+					<!--begin adv-block-->
+					<div class="adv-block" data-aos="fade-up" data-aos-once="true">
+						<div class="adv-block__img">
+							<img src="img/adv5.png" alt="alt">
+						</div>
+						<i class="decor-lines decor-lines--reverse adv-block__lines"></i>
+						<h3 class="title-xs adv-block__title">Высокие параметры</h3>
+						<p>чувсвительность и 
+						специфичность до 99%</p>
+					</div>
+					<!--end adv-block-->
+					<!--begin adv-block-->
+					<div class="adv-block" data-aos="fade-up" data-aos-once="true">
+						<div class="adv-block__img">
+							<img src="img/adv6.png" alt="alt">
+						</div>
+						<i class="decor-lines decor-lines--reverse adv-block__lines"></i>
+						<h3 class="title-xs adv-block__title">Цветовая индикация</h3>
+						<p>контрольная и аналитическая
+						зоны разного цвета</p>
+					</div>
+					<!--end adv-block-->
+				</div>
+				<!--end advantages__line-->
+			</div>
+			<!--end advantages__inner-->
+		</div>
+		<!--end l-->
+	</div>
+	<!--end advantages-->
+	<!--begin production-->
+	<div class="production">
+		<!--begin l-->
+		<div class="l">
+			<h2 class="title-m production__title">Собственное <strong>производство</strong></h2>
+			<!--begin production__inner-->
+			<div class="production__inner">
+				<!--begin production__line-->
+				<div class="production__line">	
+					<div class="production__text" data-aos-once="true" data-aos="fade-up-right">
+						<h3 class="production__text-title title-xs">
+							<i class="decor-lines"></i>
+							Высокопроизводительные 
+							автоматизированные линии
+						</h3>
+						<p>Автоматизация всех стадий, начиная от разлива жидких компонентов и заканчивая упаковкой и этикетированием готовой продукции, обеспечивает быстрое выполнения Ваших заказов любой сложности и объема.
+						</p>
+					</div>
+					<div class="production__img" data-aos-once="true" data-aos="fade-up-left">
+						<img src="img/prod1.jpg" alt="alt">
+					</div>
+				</div>
+				<!--end production__line-->
+				<!--begin production__line-->
+				<div class="production__line">	
+					<div class="production__img" data-aos-once="true" data-aos="fade-up-right">
+						<img src="img/prod2.jpg" alt="alt">
+					</div>
+					<div class="production__text production__text--r" data-aos-once="true" data-aos="fade-up-right">
+						<h3 class="production__text-title title-xs">
+							<i class="decor-lines"></i>
+							Прецизионные системы нанесения реагентов
+						</h3>
+						<p>Системы дозирования жидких компонентов позволяют с высокой точностью наносить реагенты  в контрольные и аналитические зоны будущих тест-полосок, что обеспечивает высокие аналитические параметры тестов.
+						</p>
+					</div>
+				</div>
+				<!--end production__line-->
+				<!--begin production__line-->
+				<div class="production__line">	
+					<div class="production__text" data-aos-once="true" data-aos="fade-up-right">
+						<h3 class="production__text-title title-xs production__text-title title-xs--center">
+							<i class="decor-lines"></i>
+							Высокая чувствительность и специфичность 
+							тестов
+						</h3>
+						<p>За счет собственных запатентованных технологий производства. Разработанные системы усиления аналитического сигнала и снижения предела обнаружения позволяют добиться высокой воспроизводимости и стабильности тестов.
+						</p>
+					</div>
+					<div class="production__img" data-aos-once="true" data-aos="fade-up-left">
+						<img src="img/prod3.jpg" alt="alt">
+					</div>
+				</div>
+				<!--end production__line-->
+				<!--begin production__line-->
+				<div class="production__line">	
+					<div class="production__img" data-aos-once="true" data-aos="fade-up-right">
+						<img src="img/prod4.jpg" alt="alt">
+					</div>
+					<div class="production__text production__text--r" data-aos-once="true" data-aos="fade-up-right">
+						<h3 class="production__text-title title-xs">
+							<i class="decor-lines"></i>
+							Создание новых решений
+						</h3>
+						<p>и их апробация в тесном сотрудничестве с ведущими институтами РАН. Высокотехнологичное производство, современная научная база и тесное сотрудничество российскими и зарубежными партнерами позволяют реализовывать задачи любой сложности.
+						</p>
+					</div>
+				</div>
+				<!--end production__line-->
+			</div>
+			<!--end production__inner-->
+		</div>
+		<!--end l-->
+	</div>
+	<!--end production-->
+	<!--begin home-callback-->
+	<div class="hcallback" style="background-image: url('img/form-bg.jpg');">
+		<!--begin l-->
+		<div class="l">
+			<h2 class="title-m hcallback__title"><strong>Остались вопросы?</strong></h2>
+			<div class="hcallback__text">
+				<p>Оставьте свою почту или номер телефона, 
+				наши специалисты свяжутся с Вами</p>
+			</div>
+			<!--begin form-->
+			<div class="form">
+				<form action="">
+					<!--begin form__juctify-line-->
+					<div class="form__juctify-line">
+						<div class="form__field">
+							<input type="text" placeholder="Ваше имя">
+						</div>
+						<div class="form__field">
+							<input type="text" placeholder="Ваш Email">
+						</div>
+						<div class="form__field">
+							<input type="text" placeholder="Ваш телефон">
+						</div>
+						<button class="btn btn--big" type="submit">Получить консультацию</button>
+					</div>
+					<!--end form__juctify-line-->
+				</form>
+			</div>
+			<!--end form-->
+		</div>
+		<!--end l-->
+	</div>
+	<!--end home-callback-->
 </div>
 <!--end content-block-->
 {% include "partials/_footer.html" %}

@@ -1,4 +1,5 @@
 import svgUseIt from 'svg-use-it';
+import AOS from 'aos';
 // import scrollMagic from './components/scrollmagic.js';
 // import techAnimation from './components/tech-animation.js';
 // import slick from 'slick-carousel';
@@ -6,9 +7,10 @@ import svgUseIt from 'svg-use-it';
 $(document).ready(function(){
 
 	svgUseIt();
-	// scrollMagic();
-	// techAnimation();
+	AOS.init({
+		 disable: 'mobile'
 
+	})
 	//end
 });
 

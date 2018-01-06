@@ -3,26 +3,32 @@
 	color: $white
 	padding-top: 20px
 	padding-bottom: 30px
-
 	a
 		color: $white
 	&__inner
 		display: flex
 		justify-content: space-between
+		+m
+			display: block
 	&__left, &__right
 		flex-basis: 278px
 		flex-shrink: 0
+		+m
+			text-align: center
 	&__left
+		+m
+			margin-bottom: 20px
 	&__center
 		flex-basis: 585px
 		flex-grow: 0
 		flex-shrink: 1
 		padding: 0 15px
+		+m
+			display: none
 	&__right
 		padding-left: 15px
-
 		p
-			margin-bottom: 16px
+			margin-bottom: 19px
 			font-size: 16px
 			font-weight: 400
 			&:last-of-type
@@ -43,9 +49,13 @@
 			text-align: center
 			+robc
 			line-height: 1.1
+			+m
+				font-size: 14px
 			span
 				font-size: 22px
 				text-align: center
+				+m
+					font-size: 16px
 	&__nav
 		font-size: 0
 		margin-bottom: 12px
@@ -53,7 +63,9 @@
 			display: inline-block
 			vertical-align: top
 			width: 47%
-			margin-bottom: 8px
+			margin-bottom: 11px
+			+m
+				width: auto
 			&.is-active
 				a
 					&:after
@@ -61,6 +73,10 @@
 			a
 				font-size: 16px
 				position: relative
+				+m
+					display: block
+					padding: 5px
+					margin: 5px
 				&:after
 					content: ''
 					position: absolute

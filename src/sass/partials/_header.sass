@@ -7,6 +7,8 @@
 	width: 100%
 	min-height: 88px
 	overflow: hidden
+	+m
+		position: static
 	.l
 		&:before, &:after
 			content: ''
@@ -19,6 +21,8 @@
 			transform-origin: 50% 50%
 			transform: skew(25deg)
 			z-index: 1
+			+m
+				display: none
 		&:before
 			right: 1154px
 		&:after
@@ -29,6 +33,12 @@
 		float: left
 		font-size: 0
 		padding-top: 5px
+		+m
+			float: none
+			text-align: center
+			margin-bottom: 20px
+		+xs
+			padding-right: 30px
 		a
 			display: inline-block
 			vertical-align: top
@@ -43,17 +53,40 @@
 			font-weight: 700
 			font-size: 28px
 			color: $red2
+			+xs
+				font-size: 14px
+				margin-top: 7px
 			span
 				font-size: 37px
+				+xs
+					font-size: 14px
+		img
+			+xs
+				width: 70px
 	&__right
 		float: right
 		width: 652px
+		+lg
+			width: 565px
+		+l
+			width: 500px
+		+m
+			float: none
+			width: 100%
 	&__top
 		display: flex
 		justify-content: space-between
 		margin-bottom: 10px
+		+m
+			display: block
+			text-align: center
+			margin-bottom: 20px
 	&__langs
 		font-size: 0
+		+m
+			position: absolute
+			right: 10px
+			top: 0px
 		a
 			display: inline-block
 			vertical-align: top
@@ -64,8 +97,16 @@
 			+robc
 			color: $black
 			text-align: center
-			padding-top: 3px
+			padding-top: 5px
 			margin-right: 11px
+			+xs
+				display: block
+				right: 0
+				width: 20px
+				height: 20px
+				font-size: 14px
+				padding-top: 2px
+				margin-bottom: 5px
 			&:last-of-type
 				margin-right: 0
 			&.is-active
@@ -77,6 +118,12 @@
 		margin-top: 3px
 		+robc
 		color: $black
+		+m
+			margin-right: 10px
+		+xs
+			margin-right: 0
+			display: block
+			margin-bottom: 10px
 		i
 			position: relative
 			top: 3px
@@ -89,6 +136,13 @@
 		padding-left: 46px
 		position: relative
 		z-index: 2
+		text-align: left
+		+lg
+			padding-left: 20px
+		+m
+			background: $red
+			text-align: center
+			padding-left: 0
 		li
 			display: inline-block
 			vertical-align: top
@@ -98,20 +152,35 @@
 			&.is-active
 				a
 					background: $red-d
+					+m
+						background: none
 		a
 			font-weight: 300
 			color: $white
 			font-size: 18px
-			padding: 5px 35px
+			padding: 6px 35px 0px
+			height: 35px
 			// background: $red
 			display: block
 			transform-origin: 50% 50%
 			transform: skew(25deg)
 			+trans
+			+lg
+				padding: 6px 20px 0px
+				
+			+m
+				padding: 10px
+				height: auto
+				transform: skew(0deg)
 			span
 				display: block
 				transform-origin: 50% 50%
 				transform: skew(-25deg)
+				+m
+					transform: skew(0deg)
+
+
+
 			&:hover
 				background: $red-d
 

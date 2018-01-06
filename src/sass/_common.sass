@@ -24,6 +24,7 @@ $red: #e50443
 $red2: #e10048
 $red-d: #b30133
 $blue: #0365aa
+$bg-blue: #e2f6fe
 a
 	text-decoration: none
 	color: $blue
@@ -31,29 +32,44 @@ h1, h2, h3, h4, h5, h6
 	font-weight: normal
 body
 	background: $white
-	line-height: 1.4
+	line-height: 1.2
 	font-size: 18px
 	+rob
 	color: $black
 	font-weight: 100
+	+m
+		font-size: 14px
 .out
 	display: flex
 	flex-direction: column
 	min-height: 100vh
+	overflow: hidden
 .content-block
+	background-color: $bg-blue
 	flex: 1
-.title-lg, .title-m, .title-sm, .title-line
+	+cover
+	&--p-t
+		padding-top: 160px
+.title-lg, .title-m, .title-sm, .title-line, .title-xs
 	line-height: 1
 .title-lg
 	color: $white
 	+robc
 	font-size: 36px
 	font-weight: 700
+	+m
+		font-size: 20px
+		text-align: center
 .title-m
 	color: $red
 	+rob
 	font-size: 30px
 	font-weight: 100
+	text-align: center
+	margin-bottom: 50px
+	+m
+		margin-bottom: 20px
+		font-size: 18px
 	strong
 		font-weight: 500
 .title-sm
@@ -61,6 +77,17 @@ body
 	+rob
 	font-size: 24px
 	font-weight: 500
+	margin-bottom: 26px
+	+m
+		font-size: 17px
+		margin-bottom: 20px
+.title-xs
+	color: $red
+	+robc
+	font-size: 22px
+	font-weight: 700
+	+m
+		font-size: 16px
 .title-line
 	color: $blue
 	+rob
@@ -76,3 +103,100 @@ body
 			width: 2000px
 			background: $blue
 			bottom: 0
+.list
+	+robc
+	font-size: 24px
+	font-weight: 400
+	margin-bottom: 62px
+	+m
+		font-size: 14px
+		margin-bottom: 20px
+	li
+		position: relative
+		padding-left: 18px
+		line-height: 1
+		margin-bottom: 8px
+		&:before
+			content: ''
+			position: absolute
+			width: 9px
+			height: 9px
+			background-color: $red
+			top: 10px
+			left: 0
+			+m
+				top: 2px
+.btn
+	color: $white
+	+robc
+	font-size: 18px
+	font-weight: 400
+	display: inline-block
+	vertical-align: top
+	background: $red
+	padding: 6px 10px
+	min-width: 180px
+	text-align: center
+	+trans
+	border: 1px solid $red
+	appearance: none
+	&:hover
+		background: $white
+		color: $red
+	&--big
+		padding: 9px 10px
+		min-width: 261px
+.styled-text
+	position: relative
+	padding-left: 18px
+	+m
+		padding-left: 10px
+	&:before
+		content: ''
+		position: absolute
+		width: 2px
+		background: $blue
+		left: 0
+		top: 3px
+		bottom: 3px
+.decor-lines
+	width: 39px
+	height: 8px
+	display: block
+	background-image: url('../img/lines.png')
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	&--reverse
+		width: 36px
+		height: 10px
+		background-image: url('../img/lines2.png')
+.two-col
+	+clr
+	margin-bottom: 70px
+	+m
+		margin-bottom: 30px
+	&__left, &__right
+		width: 50%
+		+m
+			float: none
+			width: 100%
+			padding: 0
+	&__left
+		float: left
+		padding-right: 16px
+		+m
+			margin-bottom: 20px
+	&__right
+		float: right
+		padding-left: 16px
+		&--text-r
+			text-align: right
+			+m
+				text-align: center
+.justify
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	+m
+		display: block
+		

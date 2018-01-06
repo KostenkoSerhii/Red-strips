@@ -1,0 +1,89 @@
+---
+title: contact page
+bgimg: 'contact-bg.jpg'
+---
+{% extends "layouts/_layout.html" %}
+{% block content %}
+{% include "partials/_header.html" %}
+<!--begin content-block-->
+<div class="content-block content-block--p-t" {% if bgimg %} style="background-image: url(img/{{bgimg}});" {% endif %}>
+	<!--begin l-->
+	<div class="l l--sm">
+		<h1 class="title-m"><strong>Контакты</strong></h1>
+		<h2 class="title-sm">Производитель : ООО «РЭД»</h2>
+		<!--begin two-col-->
+		<div class="two-col">
+			<!--begin two-col__left-->
+			<div class="two-col__left">
+				<div class="cont-block">
+					<i class="loc"></i>
+					<strong>Офис - склад:</strong>
+					<p> 119071, г. Москва, Ленинский пр-т., д.33 стр. 5</p>
+				</div>
+			</div>
+			<!--end two-col__left-->
+			<!--begin two-col__right-->
+			<div class="two-col__right ">
+				<div class="justify">
+					<div class="cont-block">
+						<i class="phone"></i>
+						<strong>Телефон:</strong>
+						<p><a href="tell:+74956603425">+7 495 6603425</a></p>
+					</div>
+					<div class="cont-block">
+						<i class="mail"></i>
+						<strong>E-mail:</strong>
+						<p><a href="mailto:6603425@mail.ru">6603425@mail.ru</a></p>
+					</div>
+					<div class="cont-block">
+						<i class="site"></i>
+						<strong>Сайт:</strong>
+						<p><a href="red-test.ru">red-test.ru</a></p>
+					</div>		
+				</div>
+			</div>
+			<!--end two-col__right-->
+		</div>
+		<!--end two-col-->
+		<!--begin form-->
+		<div class="form">
+			<h2 class="title-sm">Обратная связь</h2>
+			<form action="">
+				<!--begin two-col-->
+				<div class="two-col">
+					<!--begin two-col__left-->
+					<div class="two-col__left">
+						<div class="form__field form__field--full">
+							<input type="text" placeholder="Ваше имя">
+						</div>
+						<div class="form__field form__field--full">
+							<input type="text" placeholder="Ваш Email">
+						</div>
+						<div class="form__field form__field--full">
+							<input type="text" placeholder="Ваш телефон">
+						</div>
+						
+					</div>
+					<!--end two-col__left-->
+					<!--begin two-col__right-->
+					<div class="two-col__right two-col__right--text-r">
+						<div class="form__field form__field--full">
+							<textarea placeholder="Ваше сообщение"></textarea>
+						</div>
+						<button class="btn" type="submit">Отправить</button>
+					</div>
+					<!--end two-col__right-->
+				</div>
+				<!--end two-col-->
+			</form>
+		</div>
+		<!--end form-->
+	</div>
+	<!--end l-->
+</div>
+<!--end content-block-->
+{% include "partials/_footer.html" %}
+
+
+
+{% endblock %}

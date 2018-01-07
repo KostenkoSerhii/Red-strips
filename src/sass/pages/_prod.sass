@@ -7,6 +7,8 @@
 		margin-bottom: 42px
 		font-weight: 400
 		padding-left: 18px
+		+m
+			padding-left: 0
 		i
 			font-weight: 100
 		p
@@ -15,22 +17,156 @@
 		+clr
 	&__left-link
 		float: left
+		+xs
+			float: none
+			display: block
+			margin-bottom: 20px
 	&__right-link
 		float: right
+		+xs
+			float: none
+			display: block
+			margin-bottom: 20px
 	.styled-text
 		margin-bottom: 30px
 .prod-two-col
 	+clr
 	margin-bottom: 45px
+	+m
+		margin-bottom: 20px
 	&__left
 		float: left
 		+m
 			margin-bottom: 20px
 			text-align: center
+			float: none
+
 		img
 			max-width: 454px
 			height: auto
 			max-height: 454px
+			+xs
+				max-width: 100%
 	&__right
 		float: right
 		width: calc(100% - 488px)
+		+m
+			float: none
+			width: 100%
+.prod-steps
+	display: flex
+	justify-content: space-between
+	margin-bottom: 67px
+	+m
+		display: block
+		margin-bottom: 10px
+		text-align: center
+.prod-step
+	display: inline-block
+	vertical-align: top
+	width: 200px
+	flex-basis: 200px
+	text-align: center
+	+lg
+		padding-left: 5px
+		padding-right: 5px
+	+m
+		margin-bottom: 20px
+	&__img
+		margin-bottom: 13px
+		height: 130px
+		display: flex
+		align-items: flex-end
+		justify-content: center
+		img
+			display: inline-block
+			vertical-align: bottom
+			max-width: 173px
+			height: auto
+			max-height: 130px
+	&__text
+		+robc
+		font-weight: 400
+		font-size: 16px
+		+m
+			font-size: 14px
+.results
+	margin-bottom: 84px
+	+m
+		margin-bottom: 30px
+	&__inner
+		+clr
+	&__left
+		float: left
+		width: 362px
+		text-align: justify
+		+lg
+			font-size: 16px
+			width: 300px
+		+m
+			float: none
+			width: 100%
+			margin-bottom: 20px
+			text-align: left
+		&--big
+			width: 555px
+			padding-top: 32px
+			+lg
+				width: 400px
+			+m
+				padding-top: 0
+	&__right
+		padding-top: 38px
+		float: right
+		width: calc(100% - 362px)
+		+lg
+			width: calc(100% - 300px)
+		+m
+			float: none
+			width: 100%
+		&--sm
+			width: calc(100% - 555px)
+			+lg
+				width: calc(100% - 400px)
+.rimgs
+	display: flex
+	justify-content: space-between
+	padding-left: 47px
+	+lg
+		padding-left: 25px
+	+m
+		padding-left: 0
+		display: block
+		text-align: center
+	&__group
+		display: inline-block
+		vertical-align: top
+		+m
+			margin-bottom: 20px
+		.rimgs__img
+			padding-left: 38px
+	&__item
+		text-align: center
+		+m
+			margin-bottom: 20px
+	&__img
+		margin-bottom: 22px
+		img
+			max-height: 197px
+			width: auto
+			+lg
+				max-height: 170px
+			+m
+				max-width: 100%
+				height: auto
+	&__text
+		+clr
+		+robc
+		font-weight: 400
+	&__text-left
+		float: left
+	&__text-right
+		float: right
+		padding-right: 45px
+		+m
+			padding-right: 20px

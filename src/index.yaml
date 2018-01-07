@@ -7,5 +7,9 @@ PageList:
   ready: 50%
 - file: news.html
   ready: 50%
-- file: text-page.html
+- file: prod.html
+  ready: 50%
+- file: prod2.html
+  ready: 50%
+- file: catalog.html
   ready: 50%

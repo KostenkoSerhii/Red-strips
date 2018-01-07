@@ -96,16 +96,26 @@ html {
   display: inline-block;
 }
 
-.icon-facebook:before {
+.icon-check:before {
   content: "";
 }
 
-.icon-letter:before {
+.icon-facebook:before {
   content: "";
 }
 
-.icon-phone:before {
+.icon-letter:before {
   content: "";
+}
+
+.icon-phone:before {
+  content: "";
+}
+
+.icon-check {
+  width: 1.33em;
+  height: 1em;
+  fill: initial;
 }
 
 .icon-facebook {
@@ -214,8 +224,8 @@ strong {
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
   font-weight: 500;
-  padding-left: 112px;
-  margin-bottom: 26px;
+  padding-left: 211px;
+  margin-bottom: 20px;
   overflow: hidden;
 }
 
@@ -337,6 +347,10 @@ strong {
   clear: both;
 }
 
+.two-col--mb-none {
+  margin-bottom: 0;
+}
+
 .two-col__left, .two-col__right {
   width: 50%;
 }
@@ -344,15 +358,27 @@ strong {
 .two-col__left {
   float: left;
   padding-right: 16px;
+  position: relative;
+}
+
+.two-col__left--big {
+  width: 472px;
+  padding-right: 0;
 }
 
 .two-col__right {
   float: right;
   padding-left: 16px;
+  position: relative;
 }
 
 .two-col__right--text-r {
   text-align: right;
+}
+
+.two-col__right--sm {
+  width: 375px;
+  padding-left: 0;
 }
 
 .justify {
@@ -374,6 +400,12 @@ i.file {
   background-image: url("../img/file.png");
   height: 25px;
   width: 19px;
+}
+
+i.file--sm {
+  width: 9px;
+  height: 12px;
+  background-size: 9px 12px;
 }
 
 i.diplom {
@@ -413,8 +445,37 @@ i.diplom {
   left: 0;
 }
 
+.icon-link:hover {
+  color: #e50443;
+}
+
 .icon-link:hover span:after {
-  opacity: 0;
+  background: #e50443;
+}
+
+.icon-link--sm {
+  padding-left: 15px;
+  font-size: 16px;
+  padding-bottom: 0;
+}
+
+.icon-link--sm span:after {
+  display: none;
+}
+
+.icon-link--sm:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #0365aa;
+  transition: all 0.2s ease;
+}
+
+.icon-link--sm:hover:after {
+  background: #e50443;
 }
 
 .l {
@@ -1200,7 +1261,207 @@ i.diplom {
   width: calc(100% - 488px);
 }
 
+.prod-steps {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 67px;
+}
+
+.prod-step {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  -ms-flex-preferred-size: 200px;
+  flex-basis: 200px;
+  text-align: center;
+}
+
+.prod-step__img {
+  margin-bottom: 13px;
+  height: 130px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.prod-step__img img {
+  display: inline-block;
+  vertical-align: bottom;
+  max-width: 173px;
+  height: auto;
+  max-height: 130px;
+}
+
+.prod-step__text {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.results {
+  margin-bottom: 84px;
+}
+
+.results__inner {
+  *zoom: 1;
+}
+
+.results__inner:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.results__left {
+  float: left;
+  width: 362px;
+  text-align: justify;
+}
+
+.results__left--big {
+  width: 555px;
+  padding-top: 32px;
+}
+
+.results__right {
+  padding-top: 38px;
+  float: right;
+  width: calc(100% - 362px);
+}
+
+.results__right--sm {
+  width: calc(100% - 555px);
+}
+
+.rimgs {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-left: 47px;
+}
+
+.rimgs__group {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.rimgs__group .rimgs__img {
+  padding-left: 38px;
+}
+
+.rimgs__item {
+  text-align: center;
+}
+
+.rimgs__img {
+  margin-bottom: 22px;
+}
+
+.rimgs__img img {
+  max-height: 197px;
+  width: auto;
+}
+
+.rimgs__text {
+  *zoom: 1;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+}
+
+.rimgs__text:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.rimgs__text-left {
+  float: left;
+}
+
+.rimgs__text-right {
+  float: right;
+  padding-right: 45px;
+}
+
+.catalog__title {
+  margin-bottom: 42px;
+}
+
+.catalog__title-sec {
+  padding-left: 112px;
+  margin-bottom: 45px;
+}
+
+.catalog__img {
+  position: relative;
+  right: -51px;
+  top: -82px;
+  max-width: 520px;
+  height: auto;
+}
+
+.cat-item {
+  *zoom: 1;
+  margin-bottom: 27px;
+}
+
+.cat-item:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.cat-item__prod-link {
+  float: left;
+  position: relative;
+  padding-left: 30px;
+  font-weight: 500;
+  color: #000;
+  transition: all 0.2s ease;
+  width: calc(100% - 110px);
+}
+
+.cat-item__prod-link i {
+  width: 16px;
+  height: 16px;
+  background: #0365aa;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  display: block;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.cat-item__prod-link svg {
+  fill: #fff;
+  font-size: 11px;
+  position: relative;
+  top: -2px;
+}
+
+.cat-item__prod-link:hover {
+  color: #b30133;
+}
+
+.cat-item__prod-link:hover i {
+  background: #b30133;
+}
+
+.cat-item .icon-link {
+  float: right;
+}
+
 @media only screen and (max-width: 1199px){
+  .title-line{
+    padding-left: 100px;
+  }
   .header__right{
     width: 565px;
   }
@@ -1233,6 +1494,33 @@ i.diplom {
   .hero__list{
     padding-left: 0;
   }
+  .prod-step{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .results__left{
+    font-size: 16px;
+    width: 300px;
+  }
+  .results__left--big{
+    width: 400px;
+  }
+  .results__right{
+    width: calc(100% - 300px);
+  }
+  .results__right--sm{
+    width: calc(100% - 400px);
+  }
+  .rimgs{
+    padding-left: 25px;
+  }
+  .rimgs__img img{
+    max-height: 170px;
+  }
+  .catalog__img{
+    max-width: 400px;
+    right: -20px;
+  }
 }
 
 @media only screen and (max-width: 1023px){
@@ -1244,6 +1532,9 @@ i.diplom {
 @media only screen and (max-width: 991px){
   body{
     font-size: 14px;
+  }
+  .content-block--p-t{
+    padding-top: 30px;
   }
   .title-lg{
     font-size: 20px;
@@ -1259,6 +1550,14 @@ i.diplom {
   }
   .title-xs{
     font-size: 16px;
+  }
+  .title-line{
+    padding-left: 0px;
+    font-size: 17px;
+    text-align: center;
+  }
+  .title-line span:before, .title-line span:after{
+    display: none;
   }
   .list{
     font-size: 14px;
@@ -1287,8 +1586,12 @@ i.diplom {
   .justify{
     display: block;
   }
+  .icon-link--sm{
+    font-size: 14px;
+  }
   .header{
     position: static;
+    background-color: #e2f6fe;
   }
   .header .l:before, .header .l:after{
     display: none;
@@ -1324,10 +1627,10 @@ i.diplom {
     background: none;
   }
   .header__nav a{
-    padding: 10px;
-    height: auto;
     -ms-transform: skew(0deg);
     transform: skew(0deg);
+    padding: 10px;
+    height: auto;
   }
   .header__nav a span{
     -ms-transform: skew(0deg);
@@ -1492,12 +1795,84 @@ i.diplom {
     float: none;
     width: 100%;
   }
+  .news__date{
+    margin-left: 22px;
+  }
   .prod-content__title{
     margin-bottom: 25px;
+  }
+  .prod-content__text{
+    padding-left: 0;
+  }
+  .prod-two-col{
+    margin-bottom: 20px;
   }
   .prod-two-col__left{
     margin-bottom: 20px;
     text-align: center;
+    float: none;
+  }
+  .prod-two-col__right{
+    float: none;
+    width: 100%;
+  }
+  .prod-steps{
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .prod-step{
+    margin-bottom: 20px;
+  }
+  .prod-step__text{
+    font-size: 14px;
+  }
+  .results{
+    margin-bottom: 30px;
+  }
+  .results__left{
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  .results__left--big{
+    padding-top: 0;
+  }
+  .results__right{
+    float: none;
+    width: 100%;
+  }
+  .rimgs{
+    padding-left: 0;
+    display: block;
+    text-align: center;
+  }
+  .rimgs__group{
+    margin-bottom: 20px;
+  }
+  .rimgs__item{
+    margin-bottom: 20px;
+  }
+  .rimgs__img img{
+    max-width: 100%;
+    height: auto;
+  }
+  .rimgs__text-right{
+    padding-right: 20px;
+  }
+  .catalog__title{
+    margin-bottom: 20px;
+  }
+  .catalog__img{
+    position: static;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+  .cat-item__prod-link svg{
+    top: 0;
   }
 }
 
@@ -1528,6 +1903,26 @@ i.diplom {
     margin-right: 0;
     display: block;
     margin-bottom: 10px;
+  }
+  .header__nav a{
+    font-size: 14px;
+    padding: 6px;
+  }
+  .prod-content__left-link{
+    float: none;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .prod-content__right-link{
+    float: none;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .prod-two-col__left img{
+    max-width: 100%;
+  }
+  .catalog__img{
+    max-width: 100%;
   }
 }
 

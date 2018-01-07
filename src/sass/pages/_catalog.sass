@@ -1,0 +1,59 @@
+.catalog
+	&__title
+		margin-bottom: 42px
+		+m
+			margin-bottom: 20px
+	&__title-sec
+		padding-left: 112px
+		margin-bottom: 45px
+	&__img
+		position: relative
+		right: -51px
+		top: -82px
+		max-width: 520px
+		height: auto
+		+lg
+			max-width: 400px
+			right: -20px
+		+m
+			position: static
+			display: block
+			margin-left: auto
+			margin-right: auto
+			margin-top: 40px
+		+xs
+			max-width: 100%
+.cat-item
+	+clr
+	margin-bottom: 27px
+	&__prod-link
+		float: left
+		position: relative
+		padding-left: 30px
+		font-weight: 500
+		color: $black
+		+trans
+		width: calc(100% - 110px)
+		i
+			width: 16px
+			height: 16px
+			background: $blue
+			position: absolute
+			top: 2px
+			left: 3px
+			display: block
+			text-align: center
+			+trans
+		svg
+			fill: $white
+			font-size: 11px
+			position: relative
+			top: -2px
+			+m
+				top: 0
+		&:hover
+			color: $red-d
+			i
+				background: $red-d
+	.icon-link
+		float: right

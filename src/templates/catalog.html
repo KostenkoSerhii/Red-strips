@@ -1,0 +1,169 @@
+---
+title: text page
+bgimg: 'contact-bg.jpg'
+left: [
+{
+	name: 'Гемоглобин 50 (скрытая кровь) '
+},
+{
+	name: 'Гемоглобин 50+200 (скрытая кровь,
+	две концентрации)'
+},
+{
+	name: 'Кальпротектин 50'
+},
+{
+	name: 'Кальпротектин 50+200
+	(две концентрации)'
+},
+{
+	name: 'Лактоферрин'
+},
+{
+	name: 'Гемоглобин и трансферрин'
+},
+{
+	name: 'Helicobacter pylori'
+},
+{
+	name: 'Escherichia coli O157:H7'
+},
+{
+	name: 'Cryptosporidium parvum'
+},
+{
+	name: 'Giardia intestinalis'
+}
+]
+left2: [
+{
+	name: 'Респираторно-синцитиальный вирус '
+},
+{
+	name: 'Аденовирус '
+},
+{
+	name: 'Грипп типа А и В'
+},
+{
+	name: 'Стрептококк группы А'
+}
+]
+right: [
+{
+	name: 'Campylobacter spp.'
+},
+{
+	name: 'Listeria monocytogenes'
+},
+{
+	name: 'Salmonella'
+},
+{
+	name: 'Salmonella typhi '
+},
+{
+	name: 'Аденовирус'
+},
+{
+	name: 'Ротавирус'
+},
+{
+	name: 'Аденовирус и ротавирус'
+},
+{
+	name: 'Энтеровирус'
+},
+{
+	name: 'Вирус гепатита А'
+},
+{
+	name: 'Астровирус'
+}
+]
+---
+{% extends "layouts/_layout.html" %}
+{% block content %}
+{% include "partials/_header.html" %}
+<!--begin content-block-->
+<div class="content-block content-block--p-t" {% if bgimg %} style="background-image: url(img/{{bgimg}});" {% endif %}>
+	<!--begin l-->
+	<div class="l l--sm">
+		<!--begin catalog-->	
+		<div class="catalog">
+			<h1 class="title-m catalog__title">Определяемые<strong> антигены</strong></h1>
+			<h2 class="title-line catalog__title-sec">
+				<span>Анализ кала</span>
+			</h2>
+			<!--begin two-col-->
+			<div class="two-col">
+				<!--begin two-col__left-->
+				<div class="two-col__left two-col__left--big">
+					{% for test in left %}
+					<div class="cat-item">
+						<a class="cat-item__prod-link" href="#">
+							<i>{{mixins.icon('check')}}</i>
+							{{test.name}}
+						</a>
+						<a class="icon-link icon-link--sm" href="#" download>
+							<i class="file file--sm"></i>
+							<span>Инструкция</span>
+						</a>
+					</div>
+					{% endfor %}
+				</div>
+				<!--end two-col__left-->
+				<!--begin two-col__right-->
+				<div class="two-col__right two-col__right--sm">
+					{% for test in right %}
+					<div class="cat-item">
+						<a class="cat-item__prod-link" href="#">
+							<i>{{mixins.icon('check')}}</i>
+							{{test.name}}
+						</a>
+						<a class="icon-link icon-link--sm" href="#" download>
+							<i class="file file--sm"></i>
+							<span>Инструкция</span>
+						</a>
+					</div>
+					{% endfor %}
+				</div>
+				<!--end two-col__right-->
+			</div>
+			<!--end two-col-->
+			<h2 class="title-line catalog__title-sec">
+				<span>Анализ респираторных выделений</span>
+			</h2>
+			<!--begin two-col-->
+			<div class="two-col two-col--mb-none">
+				<!--begin two-col__left-->
+				<div class="two-col__left two-col__left--big">
+					{% for test in left2 %}
+					<div class="cat-item">
+						<a class="cat-item__prod-link" href="#">
+							<i>{{mixins.icon('check')}}</i>
+							{{test.name}}
+						</a>
+						<a class="icon-link icon-link--sm" href="#" download>
+							<i class="file file--sm"></i>
+							<span>Инструкция</span>
+						</a>
+					</div>
+					{% endfor %}
+				</div>
+				<!--end two-col__left-->
+				<!--begin two-col__right-->
+				<div class="two-col__right two-col__right--sm">
+					<img class="catalog__img" src="img/catimg.png" alt="alt">
+				</div>
+				<!--end two-col__right-->
+			</div>
+			<!--end two-col-->
+		</div>
+		<!--end catalog-->
+	</div>
+	<!--end l-->
+</div>
+<!--end content-block-->
+{% include "partials/_footer.html" %}
+{% endblock %}

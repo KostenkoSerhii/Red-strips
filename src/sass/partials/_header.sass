@@ -9,6 +9,7 @@
 	overflow: hidden
 	+m
 		position: static
+		background-color: $bg-blue
 	.l
 		&:before, &:after
 			content: ''
@@ -167,11 +168,14 @@
 			+trans
 			+lg
 				padding: 6px 20px 0px
-				
 			+m
+				transform: skew(0deg)
 				padding: 10px
 				height: auto
-				transform: skew(0deg)
+			+xs
+				
+				font-size: 14px
+				padding: 6px
 			span
 				display: block
 				transform-origin: 50% 50%

@@ -1,0 +1,160 @@
+---
+title: text page
+bgimg: 'contact-bg.jpg'
+---
+{% extends "layouts/_layout.html" %}
+{% block content %}
+{% include "partials/_header.html" %}
+<!--begin content-block-->
+<div class="content-block content-block--p-t" {% if bgimg %} style="background-image: url(img/{{bgimg}});" {% endif %}>
+	<!--begin l-->
+	<div class="l">
+		<!--begin prod-->
+		<div class="prod-content">
+			<h1 class="title-m prod-content__title"><strong>Грипп А и В</strong></h1>
+			<!--begin prod-two-col-->
+			<div class="prod-two-col">
+				<!--begin prod-two-col__left-->
+				<div class="prod-two-col__left">
+					<img src="img/prod6.jpg" alt="alt">
+				</div>
+				<!--end prod-two-col__left-->
+				<!--begin prod-two-col__right-->
+				<div class="prod-two-col__right">
+					<div class="styled-text styled-text--it">
+						<p>спиралевидная бактерия, которая встречается в слизистой оболочке желудка или прикрепляется к эпителию желудка. Helicobacter pylori является причиной язвы двенадцатиперстной кишки (более 90% всех случаев) и язвы желудка (более 80% всех случаев).
+						</p>
+					</div>
+					<div class="prod-content__text">
+						<p>Каждый тест «РЭД <i>Helicobacter pylori</i>» предназначен для одного определения наличия клеток Helicobacter pylori в кале человека.</p>
+						<p><strong>Чувствительность</strong> теста «РЭД Helicobacter pylori» составляет <strong>>99% </strong>.</p>
+						<p><strong>Специфичность</strong>теста «РЭД Helicobacter pylori» составляет<strong>>99%</strong>. </p>
+						<p><strong>Время проведения анализа – 10 мин.</strong></p>
+					</div>
+					<div class="prod-content__links">
+						<a class="prod-content__left-link icon-link" href="#">
+							<i class="file"></i>
+							<span>Инструкция</span>
+						</a>
+						<a class="prod-content__right-link icon-link" href="#">
+							<i class="diplom"></i>
+							<span>Регистрационное удостоверение</span>
+						</a>
+					</div>
+				</div>
+				<!--end prod-two-col__right-->
+			</div>
+			<!--end prod-two-col-->
+			<div class="prod-block">
+				<h2 class="title-line"><span>Порядок проведения теста</span></h2>
+				<!--begin prod-steps-->
+				<div class="prod-steps">
+					<!--begin prod-step-->
+					<div class="prod-step">
+						<div class="prod-step__img">
+							<img src="img/step6.png" alt="alt">
+						</div>
+						<p class="prod-step__text">Снять крышку-капельницу
+						с флакона</p>
+					</div>
+					<!--end prod-step-->
+					<!--begin prod-step-->
+					<div class="prod-step">
+						<div class="prod-step__img">
+							<img src="img/step7.png" alt="alt">
+						</div>
+						<p class="prod-step__text">Стержнем на крышке
+						отобрать часть пробы</p>
+					</div>
+					<!--end prod-step-->
+					<!--begin prod-step-->
+					<div class="prod-step">
+						<div class="prod-step__img">
+							<img src="img/step8.png" alt="alt">
+						</div>
+						<p class="prod-step__text">Ввести стержень собразцом
+						обратно во флакон и плотно завинить</p>
+					</div>
+					<!--end prod-step-->
+					<!--begin prod-step-->
+					<div class="prod-step">
+						<div class="prod-step__img">
+							<img src="img/step9.png" alt="alt">
+						</div>
+						<p class="prod-step__text">Несколько раз
+						встряхнуть пробирку</p>
+					</div>
+					<!--end prod-step-->
+					<!--begin prod-step-->
+					<div class="prod-step">
+						<div class="prod-step__img">
+							<img src="img/step10.png" alt="alt">
+						</div>
+						<p class="prod-step__text">Отломить кончик крышки и 
+							внести 4 капли в окошко 
+						кассеты, подождать 10 минут</p>
+					</div>
+					<!--end prod-step-->
+				</div>
+				<!--end prod-steps-->
+				<!--begin results-->
+				<div class="results">
+					<h2 class="title-line"><span>Результаты теста</span></h2>
+					<!--begin results__inner-->
+					<div class="results__inner">
+						<!--begin results__left-->
+						<div class="results__left results__left--big">
+							<p>
+								Выявление одной зеленой контрольной линии свидетельствует об отрицательном результате анализа. Выявление двух окрашенных линий свидетельствует о наличие клеток Helicobacter pylori). В случаях, когда не образуется ни одной окрашенной линии или образуется только красная аналитическая линия, результат анализа признается недействительным.
+							</p>
+						</div>
+						<!--end results__left-->
+						<!--begin results__right-->
+						<div class="results__right results__right--sm">
+							<!--begin results-imgs-->
+							<div class="rimgs">
+								<div class="rimgs__item">
+									<div class="rimgs__img">
+										<img src="img/result3.png" alt="">
+									</div>
+									<div class="rimgs__text">
+										<span>Отрицательный</span>
+									</div>
+								</div>
+								<div class="rimgs__item">
+									<div class="rimgs__img">
+										<img src="img/result4.png" alt="">
+									</div>
+									<div class="rimgs__text">
+										<span>Положительный</span>
+									</div>
+								</div>
+								<div class="rimgs__item">
+									<div class="rimgs__img">
+										<img src="img/result5.png" alt="">
+									</div>
+									<div class="rimgs__text">
+										<span>Недействительный</span>
+									</div>
+								</div>
+							</div>
+							<!--end results-imgs-->
+
+						</div>
+						<!--end results__right-->
+					</div>
+					<!--end results__inner-->
+				</div>
+				<!--end results-->
+			</div>
+		</div>
+		<!--end prod-->
+	</div>
+	<!--end l-->
+</div>
+<!--end content-block-->
+{% include "partials/_footer.html" %}
+
+
+
+{% endblock %}

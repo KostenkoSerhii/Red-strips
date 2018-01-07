@@ -52,6 +52,8 @@ strong
 	+cover
 	&--p-t
 		padding-top: 160px
+		+m
+			padding-top: 30px
 .title-lg, .title-m, .title-sm, .title-line, .title-xs
 	line-height: 1
 .title-lg
@@ -95,9 +97,15 @@ strong
 	+rob
 	font-size: 24px
 	font-weight: 500
-	padding-left: 112px
-	margin-bottom: 26px
+	padding-left: 211px
+	margin-bottom: 20px
 	overflow: hidden
+	+lg
+		padding-left: 100px
+	+m
+		padding-left: 0px
+		font-size: 17px
+		text-align: center
 	span
 		position: relative
 		&:before, &:after
@@ -107,6 +115,8 @@ strong
 			width: 2000px
 			background: $blue
 			bottom: 5px
+			+m
+				display: none
 		&:before
 			right: calc(100% + 8px)
 		&:after
@@ -185,6 +195,8 @@ strong
 	margin-bottom: 70px
 	+m
 		margin-bottom: 30px
+	&--mb-none
+		margin-bottom: 0
 	&__left, &__right
 		width: 50%
 		+m
@@ -194,15 +206,23 @@ strong
 	&__left
 		float: left
 		padding-right: 16px
+		position: relative
 		+m
 			margin-bottom: 20px
+		&--big
+			width: 472px
+			padding-right: 0
 	&__right
 		float: right
 		padding-left: 16px
+		position: relative
 		&--text-r
 			text-align: right
 			+m
 				text-align: center
+		&--sm
+			width: 375px
+			padding-left: 0
 .justify
 	display: flex
 	justify-content: space-between
@@ -217,6 +237,10 @@ i.file
 	background-image: url('../img/file.png')
 	height: 25px
 	width: 19px
+	&--sm
+		width: 9px
+		height: 12px
+		background-size: 9px 12px
 i.diplom
 	background-image: url('../img/diploma.png')
 	width: 23px
@@ -244,6 +268,28 @@ i.diplom
 		transform: translateY(-50%)
 		left: 0
 	&:hover
+		color: $red
 		span
 			&:after
-				opacity: 0
+				background: $red
+	&--sm
+		padding-left: 15px
+		font-size: 16px
+		padding-bottom: 0	
+		+m
+			font-size: 14px
+		span
+			&:after
+				display: none
+		&:after
+			content: ''
+			position: absolute
+			bottom: -2px
+			left: 0
+			width: 100%
+			height: 1px
+			background: $blue
+			+trans
+		&:hover
+			&:after
+				background: $red

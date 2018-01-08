@@ -159,9 +159,9 @@ html {
 }
 
 .icon-letter {
-  width: 1.3em;
+  width: 1.48em;
   height: 1em;
-  fill: #134563;
+  fill: initial;
 }
 
 .icon-loc {
@@ -1167,6 +1167,14 @@ i.file--sm svg {
   left: 4px;
 }
 
+.cont-block i.mail {
+  left: -2px;
+}
+
+.cont-block i.mail svg {
+  font-size: 16px;
+}
+
 .news-list {
   padding-bottom: 20px;
 }
@@ -1853,8 +1861,12 @@ i.file--sm svg {
   }
   .cont-block i{
     top: 9px;
+    left: 0;
   }
   .cont-block i svg{
+    font-size: 14px;
+  }
+  .cont-block i.mail svg{
     font-size: 14px;
   }
   .news{

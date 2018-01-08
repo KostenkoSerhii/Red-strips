@@ -1019,7 +1019,7 @@ i.file--sm svg {
   margin-right: 0;
 }
 
-.adv-block {
+.advant-block {
   text-align: center;
   width: 260px;
   margin-bottom: 60px;
@@ -1027,23 +1027,23 @@ i.file--sm svg {
   vertical-align: top;
 }
 
-.adv-block__img {
+.advant-block__img {
   height: 87px;
   margin-bottom: 12px;
 }
 
-.adv-block__img img {
+.advant-block__img img {
   max-width: 94px;
   max-height: 87px;
 }
 
-.adv-block__lines {
+.advant-block__lines {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
 }
 
-.adv-block__title {
+.advant-block__title {
   margin-bottom: 2px;
 }
 
@@ -1051,6 +1051,7 @@ i.file--sm svg {
   padding-top: 75px;
   padding-bottom: 88px;
   border-bottom: 2px solid #e50443;
+  background: #fff;
 }
 
 .production__title {
@@ -1147,6 +1148,10 @@ i.file--sm svg {
   margin-top: 8px;
 }
 
+.cont-block a {
+  color: #000;
+}
+
 .cont-block i {
   position: absolute;
   top: 12px;
@@ -1168,11 +1173,11 @@ i.file--sm svg {
 }
 
 .cont-block i.mail {
-  left: -2px;
+  left: -3px;
 }
 
 .cont-block i.mail svg {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .news-list {
@@ -1811,7 +1816,7 @@ i.file--sm svg {
   .advantages__line .adv-block:last-of-type{
     margin-right: auto;
   }
-  .adv-block{
+  .advant-block{
     display: block;
     margin-left: auto;
     margin-right: auto;

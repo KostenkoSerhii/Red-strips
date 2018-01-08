@@ -1,8 +1,12 @@
 ---
 title: contact page
 bgimg: 'contact-bg.jpg'
+mainPage: false
+catalogPage: false
+newsPage: false
+contactPage: true
 ---
-{% extends "layouts/_layout.html" %}
+{% extends "layouts/_layout-map.html" %}
 {% block content %}
 {% include "partials/_header.html" %}
 <!--begin content-block-->
@@ -16,7 +20,7 @@ bgimg: 'contact-bg.jpg'
 			<!--begin two-col__left-->
 			<div class="two-col__left">
 				<div class="cont-block">
-					<i class="loc"></i>
+					<i class="loc">{{mixins.icon('loc')}}</i>
 					<strong>Офис - склад:</strong>
 					<p> 119071, г. Москва, Ленинский пр-т., д.33 стр. 5</p>
 				</div>
@@ -26,17 +30,17 @@ bgimg: 'contact-bg.jpg'
 			<div class="two-col__right ">
 				<div class="justify">
 					<div class="cont-block">
-						<i class="phone"></i>
+						<i class="phone">{{mixins.icon('phone')}}</i>
 						<strong>Телефон:</strong>
 						<p><a href="tell:+74956603425">+7 495 6603425</a></p>
 					</div>
 					<div class="cont-block">
-						<i class="mail"></i>
+						<i class="mail">{{mixins.icon('letter')}}</i>
 						<strong>E-mail:</strong>
 						<p><a href="mailto:6603425@mail.ru">6603425@mail.ru</a></p>
 					</div>
 					<div class="cont-block">
-						<i class="site"></i>
+						<i class="site">{{mixins.icon('domain')}}</i>
 						<strong>Сайт:</strong>
 						<p><a href="red-test.ru">red-test.ru</a></p>
 					</div>		

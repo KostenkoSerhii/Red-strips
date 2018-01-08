@@ -17,10 +17,10 @@
 				</div>
 				<!--end footer__logo-->
 				<ul class="footer__nav">
-					<li class="is-active"><a href="#">О Нас</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="#">Продукци</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li class="{% if mainPage  %}is-active{% endif %}"><a href="#"><span>О нас</span></a></li>
+					<li class="{% if catalogPage  %}is-active{% endif %}"><a href="#"><span>Продукция</span></a></li>
+					<li class="{% if newsPage %}is-active{% endif %}"><a href="#"><span>Новости</span></a></li>
+					<li class="{% if contactPage %}is-active{% endif %}"><a href="#"><span>Контакты</span></a></li>
 				</ul>
 				<p class="footer__copy">
 					© РЭД. 2017. Все права защищены

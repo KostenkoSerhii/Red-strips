@@ -1,6 +1,10 @@
 ---
 title: text page
 bgimg: 'contact-bg.jpg'
+mainPage: false
+catalogPage: true
+newsPage: false
+contactPage: false
 left: [
 {
 	name: 'Гемоглобин 50 (скрытая кровь) '
@@ -82,7 +86,7 @@ right: [
 }
 ]
 ---
-{% extends "layouts/_layout.html" %}
+{% extends "layouts/_layout-map.html" %}
 {% block content %}
 {% include "partials/_header.html" %}
 <!--begin content-block-->
@@ -106,7 +110,7 @@ right: [
 							{{test.name}}
 						</a>
 						<a class="icon-link icon-link--sm" href="#" download>
-							<i class="file file--sm"></i>
+							<i class="file file--sm">{{mixins.icon('file')}}</i>
 							<span>Инструкция</span>
 						</a>
 					</div>
@@ -122,7 +126,7 @@ right: [
 							{{test.name}}
 						</a>
 						<a class="icon-link icon-link--sm" href="#" download>
-							<i class="file file--sm"></i>
+							<i class="file file--sm">{{mixins.icon('file')}}</i>
 							<span>Инструкция</span>
 						</a>
 					</div>
@@ -145,7 +149,7 @@ right: [
 							{{test.name}}
 						</a>
 						<a class="icon-link icon-link--sm" href="#" download>
-							<i class="file file--sm"></i>
+							<i class="file file--sm">{{mixins.icon('file')}}</i>
 							<span>Инструкция</span>
 						</a>
 					</div>

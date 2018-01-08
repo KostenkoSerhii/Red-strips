@@ -10,9 +10,13 @@
 }
 
 $icon-check: "\EA01";
-$icon-facebook: "\EA02";
-$icon-letter: "\EA03";
-$icon-phone: "\EA04";
+$icon-diploma: "\EA02";
+$icon-domain: "\EA03";
+$icon-facebook: "\EA04";
+$icon-file: "\EA05";
+$icon-letter: "\EA06";
+$icon-loc: "\EA07";
+$icon-phone: "\EA08";
 
 
 %icon {
@@ -32,6 +36,10 @@ $icon-phone: "\EA04";
 }
 
 .icon-check:before { content: $icon-check; }
+.icon-diploma:before { content: $icon-diploma; }
+.icon-domain:before { content: $icon-domain; }
 .icon-facebook:before { content: $icon-facebook; }
+.icon-file:before { content: $icon-file; }
 .icon-letter:before { content: $icon-letter; }
+.icon-loc:before { content: $icon-loc; }
 .icon-phone:before { content: $icon-phone; }

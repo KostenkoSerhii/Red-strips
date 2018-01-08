@@ -100,20 +100,48 @@ html {
   content: "";
 }
 
-.icon-facebook:before {
+.icon-diploma:before {
   content: "";
 }
 
-.icon-letter:before {
+.icon-domain:before {
   content: "";
 }
 
-.icon-phone:before {
+.icon-facebook:before {
   content: "";
+}
+
+.icon-file:before {
+  content: "";
+}
+
+.icon-letter:before {
+  content: "";
+}
+
+.icon-loc:before {
+  content: "";
+}
+
+.icon-phone:before {
+  content: "";
 }
 
 .icon-check {
   width: 1.33em;
+  height: 1em;
+  fill: initial;
+}
+
+.icon-diploma {
+  width: 0.93em;
+  height: 1em;
+  fill: initial;
+}
+
+.icon-domain {
+  width: 1.11em;
   height: 1em;
   fill: initial;
 }
@@ -124,14 +152,26 @@ html {
   fill: #000;
 }
 
+.icon-file {
+  width: 0.75em;
+  height: 1em;
+  fill: initial;
+}
+
 .icon-letter {
   width: 1.3em;
   height: 1em;
   fill: #134563;
 }
 
+.icon-loc {
+  width: 0.68em;
+  height: 1em;
+  fill: initial;
+}
+
 .icon-phone {
-  width: 1em;
+  width: 0.99em;
   height: 1em;
   fill: initial;
 }
@@ -151,7 +191,7 @@ body {
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
   color: #000;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 strong {
@@ -195,7 +235,7 @@ strong {
   color: #e50443;
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -396,22 +436,14 @@ i.file, i.diplom {
   display: block;
 }
 
-i.file {
-  background-image: url("../img/file.png");
-  height: 25px;
-  width: 19px;
+i.file svg, i.diplom svg {
+  fill: #0365aa;
+  font-size: 25px;
+  transition: all 0.2s ease;
 }
 
-i.file--sm {
-  width: 9px;
-  height: 12px;
-  background-size: 9px 12px;
-}
-
-i.diplom {
-  background-image: url("../img/diploma.png");
-  width: 23px;
-  height: 25px;
+i.file--sm svg {
+  font-size: 16px;
 }
 
 .icon-link {
@@ -451,6 +483,10 @@ i.diplom {
 
 .icon-link:hover span:after {
   background: #e50443;
+}
+
+.icon-link:hover svg {
+  fill: #e50443;
 }
 
 .icon-link--sm {
@@ -802,7 +838,7 @@ i.diplom {
   border: 1px solid #0365aa;
   color: #000;
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 18px;
   padding: 5px 10px;
 }
@@ -866,7 +902,7 @@ i.diplom {
   position: absolute;
   bottom: 0;
   left: -163px;
-  height: 505px;
+  max-height: 505px;
   width: auto;
   max-width: 505px;
 }
@@ -924,6 +960,7 @@ i.diplom {
   padding-top: 73px;
   padding-bottom: 79px;
   border-bottom: 2px solid #e50443;
+  background: #fff;
 }
 
 .about__title {
@@ -949,6 +986,7 @@ i.diplom {
 .about__text {
   float: right;
   width: calc(100% - 500px);
+  text-align: justify;
 }
 
 .about__text p {
@@ -1048,6 +1086,7 @@ i.diplom {
 
 .production__text p {
   font-size: 18px;
+  text-align: justify;
 }
 
 .production__text--r {
@@ -1110,7 +1149,7 @@ i.diplom {
 
 .cont-block i {
   position: absolute;
-  top: 10px;
+  top: 12px;
   left: 0;
   background-position: 50% 50%;
   display: block;
@@ -1119,28 +1158,13 @@ i.diplom {
   transform: translateY(-50%);
 }
 
+.cont-block i svg {
+  fill: #000;
+  font-size: 17px;
+}
+
 .cont-block i.loc {
-  width: 11px;
-  height: 17px;
-  background-image: url("../img/cont1.png");
-}
-
-.cont-block i.phone {
-  width: 17px;
-  height: 17px;
-  background-image: url("../img/cont2.png");
-}
-
-.cont-block i.mail {
-  width: 22px;
-  height: 15px;
-  background-image: url("../img/cont3.png");
-}
-
-.cont-block i.site {
-  width: 22px;
-  height: 20px;
-  background-image: url("../img/cont4.png");
+  left: 4px;
 }
 
 .news-list {
@@ -1206,7 +1230,7 @@ i.diplom {
 }
 
 .prod-content__text i {
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .prod-content__text p {
@@ -1487,7 +1511,7 @@ i.diplom {
   fill: #fff;
   font-size: 11px;
   position: relative;
-  top: -2px;
+  top: -3px;
 }
 
 .cat-item__prod-link:hover {
@@ -1827,6 +1851,12 @@ i.diplom {
     display: block;
     margin-bottom: 15px;
   }
+  .cont-block i{
+    top: 9px;
+  }
+  .cont-block i svg{
+    font-size: 14px;
+  }
   .news{
     margin-bottom: 30px;
   }
@@ -1919,7 +1949,7 @@ i.diplom {
     top: 0;
   }
   .cat-item__prod-link svg{
-    top: 0;
+    top: 2px;
   }
 }
 

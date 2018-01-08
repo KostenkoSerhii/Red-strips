@@ -19,7 +19,7 @@
 		position: absolute
 		bottom: 0
 		left: -163px
-		height: 505px
+		max-height: 505px
 		width: auto
 		max-width: 505px
 		+lg
@@ -87,6 +87,7 @@
 	padding-top: 73px
 	padding-bottom: 79px
 	border-bottom: 2px solid $red
+	background: $white
 	+m
 		padding: 30px 0
 	&__title
@@ -110,6 +111,7 @@
 	&__text
 		float: right
 		width: calc(100% - 500px)
+		text-align: justify
 		+m
 			float: none
 			width: 100%
@@ -199,6 +201,7 @@
 			margin-bottom: 15px
 		p
 			font-size: 18px
+			text-align: justify
 			+m
 				font-size: 14px
 		&--r

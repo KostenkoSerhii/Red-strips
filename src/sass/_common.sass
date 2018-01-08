@@ -36,7 +36,7 @@ body
 	font-size: 18px
 	+rob
 	color: $black
-	font-weight: 100
+	font-weight: 300
 	+m
 		font-size: 14px
 strong
@@ -68,7 +68,7 @@ strong
 	color: $red
 	+rob
 	font-size: 30px
-	font-weight: 100
+	font-weight: 300
 	text-align: center
 	margin-bottom: 50px
 	+m
@@ -167,6 +167,7 @@ strong
 .styled-text
 	position: relative
 	padding-left: 18px
+	// font-weight: 400
 	+m
 		padding-left: 10px
 	&:before
@@ -233,18 +234,14 @@ i.file, 	i.diplom
 	background-repeat: no-repeat
 	background-position: 50% 50%
 	display: block
+	svg
+		fill: $blue
+		font-size: 25px
+		+trans
 i.file
-	background-image: url('../img/file.png')
-	height: 25px
-	width: 19px
 	&--sm
-		width: 9px
-		height: 12px
-		background-size: 9px 12px
-i.diplom
-	background-image: url('../img/diploma.png')
-	width: 23px
-	height: 25px
+		svg
+			font-size: 16px
 .icon-link
 	padding-left: 29px
 	position: relative
@@ -272,6 +269,8 @@ i.diplom
 		span
 			&:after
 				background: $red
+		svg
+			fill: $red
 	&--sm
 		padding-left: 15px
 		font-size: 16px

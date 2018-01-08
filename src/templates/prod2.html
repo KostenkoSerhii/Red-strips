@@ -2,7 +2,7 @@
 title: text page
 bgimg: 'contact-bg.jpg'
 ---
-{% extends "layouts/_layout.html" %}
+{% extends "layouts/_layout-map.html" %}
 {% block content %}
 {% include "partials/_header.html" %}
 <!--begin content-block-->
@@ -33,11 +33,11 @@ bgimg: 'contact-bg.jpg'
 					</div>
 					<div class="prod-content__links">
 						<a class="prod-content__left-link icon-link" href="#">
-							<i class="file"></i>
+							<i class="file">{{mixins.icon('file')}}</i>
 							<span>Инструкция</span>
 						</a>
 						<a class="prod-content__right-link icon-link" href="#">
-							<i class="diplom"></i>
+							<i class="diplom">{{mixins.icon('diploma')}}</i>
 							<span>Регистрационное удостоверение</span>
 						</a>
 					</div>

@@ -28,10 +28,10 @@
 				</div>
 				<!--end header__top-->
 				<ul class="header__nav">
-					<li><a href="#"><span>О нас</span></a></li>
-					<li class="is-active"><a href="#"><span>Продукция</span></a></li>
-					<li><a href="#"><span>Новости</span></a></li>
-					<li><a href="#"><span>Контакты</span></a></li>
+					<li class="{% if mainPage  %}is-active{% endif %}"><a href="#"><span>О нас</span></a></li>
+					<li class="{% if catalogPage  %}is-active{% endif %}"><a href="#"><span>Продукция</span></a></li>
+					<li class="{% if newsPage %}is-active{% endif %}"><a href="#"><span>Новости</span></a></li>
+					<li class="{% if contactPage %}is-active{% endif %}"><a href="#"><span>Контакты</span></a></li>
 				</ul>
 			</div>
 			<!--end header__right-->

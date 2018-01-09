@@ -7,18 +7,17 @@ newsPage: false
 contactPage: false
 left: [
 {
-	name: 'Гемоглобин 50 (скрытая кровь) '
+	name: 'Гемоглобин (скрытая кровь) '
 },
 {
 	name: 'Гемоглобин 50+200 (скрытая кровь,
 	две концентрации)'
 },
 {
-	name: 'Кальпротектин 50'
+	name: 'Кальпротектин'
 },
 {
-	name: 'Кальпротектин 50+200
-	(две концентрации)'
+	name: 'Кальпротектин 50+200 <br> (две концентрации)'
 },
 {
 	name: 'Лактоферрин'
@@ -107,7 +106,7 @@ right: [
 					<div class="cat-item">
 						<a class="cat-item__prod-link" href="#">
 							<i>{{mixins.icon('check')}}</i>
-							{{test.name}}
+							{{test.name | safe}}
 						</a>
 						<a class="icon-link icon-link--sm" href="#" download>
 							<i class="file file--sm">{{mixins.icon('file')}}</i>
@@ -123,7 +122,7 @@ right: [
 					<div class="cat-item">
 						<a class="cat-item__prod-link" href="#">
 							<i>{{mixins.icon('check')}}</i>
-							{{test.name}}
+							{{test.name | safe}}
 						</a>
 						<a class="icon-link icon-link--sm" href="#" download>
 							<i class="file file--sm">{{mixins.icon('file')}}</i>
@@ -146,7 +145,7 @@ right: [
 					<div class="cat-item">
 						<a class="cat-item__prod-link" href="#">
 							<i>{{mixins.icon('check')}}</i>
-							{{test.name}}
+							{{test.name | safe}}
 						</a>
 						<a class="icon-link icon-link--sm" href="#" download>
 							<i class="file file--sm">{{mixins.icon('file')}}</i>

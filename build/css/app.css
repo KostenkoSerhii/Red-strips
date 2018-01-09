@@ -1438,6 +1438,8 @@ i.file--sm svg {
 
 .rimgs__item {
   text-align: center;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .rimgs__img {
@@ -1817,10 +1819,8 @@ i.file--sm svg {
     margin-right: auto;
   }
   .advant-block{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    margin: 0 10px 20px;
+    width: 220px;
   }
   .production{
     padding: 30px 0;
@@ -1940,10 +1940,10 @@ i.file--sm svg {
     text-align: center;
   }
   .rimgs__group{
-    margin-bottom: 20px;
+    margin: 20px;
   }
   .rimgs__item{
-    margin-bottom: 20px;
+    margin: 20px;
   }
   .rimgs__img img{
     max-width: 100%;
@@ -2001,6 +2001,11 @@ i.file--sm svg {
   .header__nav a{
     font-size: 14px;
     padding: 6px;
+  }
+  .advant-block{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .prod-content__left-link{
     float: none;

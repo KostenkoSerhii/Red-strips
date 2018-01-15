@@ -1,4 +1,4 @@
----
+ name=""---
 title: contact page
 bgimg: 'contact-bg.jpg'
 mainPage: false
@@ -52,19 +52,19 @@ contactPage: true
 		<!--begin form-->
 		<div class="form">
 			<h2 class="title-sm">Обратная связь</h2>
-			<form action="">
+			<form action="mail.php">
 				<!--begin two-col-->
 				<div class="two-col">
 					<!--begin two-col__left-->
 					<div class="two-col__left">
 						<div class="form__field form__field--full">
-							<input type="text" placeholder="Ваше имя">
+							<input type="text" placeholder="Ваше имя" name="name">
 						</div>
 						<div class="form__field form__field--full">
-							<input type="text" placeholder="Ваш Email">
+							<input type="text" placeholder="Ваш Email" name="email">
 						</div>
 						<div class="form__field form__field--full">
-							<input type="text" placeholder="Ваш телефон">
+							<input type="text" placeholder="Ваш телефон" name="phone">
 						</div>
 						
 					</div>
@@ -72,7 +72,7 @@ contactPage: true
 					<!--begin two-col__right-->
 					<div class="two-col__right two-col__right--text-r">
 						<div class="form__field form__field--full">
-							<textarea placeholder="Ваше сообщение"></textarea>
+							<textarea placeholder="Ваше сообщение" name="text"></textarea>
 						</div>
 						<button class="btn" type="submit">Отправить</button>
 					</div>

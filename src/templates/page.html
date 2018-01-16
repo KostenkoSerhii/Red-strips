@@ -1,5 +1,5 @@
 ---
-title: Index page
+title: red-test.ru
 mainPage: true
 catalogPage: false
 newsPage: false
@@ -11,6 +11,7 @@ contactPage: false
 <!--begin content-block-->
 <div class="content-block" {% if bgimg %} style="background-image: url(img/{{bgimg}});" {% endif %}>
 	{% include "partials/_hero.html" %}
+<!-- 	<a class="js-popup-link" href="#" data-popup="popup-thanks">popup-thanks</a> -->
 	<!--begin about-->
 	<div class="about">
 		<!--begin l-->
@@ -203,13 +204,13 @@ contactPage: false
 					<!--begin form__juctify-line-->
 					<div class="form__juctify-line">
 						<div class="form__field">
-							<input type="text" placeholder="Ваше имя" name="name">
+							<input type="text" placeholder="Ваше имя" name="name" pattern="[A-Za-zА-Яа-яЁё]{,20}" required>
 						</div>
 						<div class="form__field">
-							<input type="text" placeholder="Ваш Email" name="email">
+							<input type="text" placeholder="Ваш Email" name="email" pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
 						</div>
 						<div class="form__field">
-							<input type="text" placeholder="Ваш телефон" name="phone">
+							<input type="text" placeholder="Ваш телефон" name="phone" pattern="[\+()]*(?:\d[\s\-\.()xX]*){10,14}" required>
 						</div>
 						<button class="btn btn--big" type="submit">Получить консультацию</button>
 					</div>
@@ -224,6 +225,7 @@ contactPage: false
 </div>
 <!--end content-block-->
 {% include "partials/_footer.html" %}
+{% include "components/_popup.html" %}
 
 
 

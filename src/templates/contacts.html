@@ -1,4 +1,4 @@
- name=""---
+---
 title: contact page
 bgimg: 'contact-bg.jpg'
 mainPage: false
@@ -58,13 +58,13 @@ contactPage: true
 					<!--begin two-col__left-->
 					<div class="two-col__left">
 						<div class="form__field form__field--full">
-							<input type="text" placeholder="Ваше имя" name="name">
+							<input type="text" placeholder="Ваше имя" name="name" pattern="[A-Za-zА-Яа-яЁё]{,20}" required>
 						</div>
 						<div class="form__field form__field--full">
-							<input type="text" placeholder="Ваш Email" name="email">
+							<input type="text" placeholder="Ваш Email" name="email" pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
 						</div>
 						<div class="form__field form__field--full">
-							<input type="text" placeholder="Ваш телефон" name="phone">
+							<input type="text" placeholder="Ваш телефон" name="phone" pattern="[\+()]*(?:\d[\s\-\.()xX]*){10,14}" required>
 						</div>
 						
 					</div>
@@ -87,7 +87,7 @@ contactPage: true
 </div>
 <!--end content-block-->
 {% include "partials/_footer.html" %}
-
+{% include "components/_popup.html" %}
 
 
 {% endblock %}

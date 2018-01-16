@@ -1,5 +1,5 @@
 ---
-title: text page
+title: catalog page
 bgimg: 'contact-bg.jpg'
 mainPage: false
 catalogPage: true
@@ -7,81 +7,105 @@ newsPage: false
 contactPage: false
 left: [
 {
-	name: 'Гемоглобин (скрытая кровь) '
+	name: 'Гемоглобин (скрытая кровь) ',
+	href: 'pdf/gemoglobin.pdf'
 },
 {
 	name: 'Гемоглобин 50+200 (скрытая кровь,
-	две концентрации)'
+	две концентрации)',
+	href: 'pdf/gemoglobin-50-200.pdf'
 },
 {
-	name: 'Кальпротектин'
+	name: 'Кальпротектин',
+	href: 'pdf/calprotectin.pdf'
 },
 {
-	name: 'Кальпротектин 50+200 <br> (две концентрации)'
+	name: 'Кальпротектин 50+200 <br> (две концентрации)',
+	href: 'pdf/calprotectin-50-200.pdf'
 },
 {
-	name: 'Лактоферрин'
+	name: 'Лактоферрин',
+	href: 'pdf/lactoferin.pdf'
 },
 {
-	name: 'Гемоглобин и трансферрин'
+	name: 'Гемоглобин и трансферрин',
+	href: 'pdf/transferin.pdf'
 },
 {
-	name: 'Helicobacter pylori'
+	name: 'Helicobacter pylori',
+	href: 'pdf/helicobacter-pylori.pdf'
 },
 {
-	name: 'Escherichia coli O157:H7'
+	name: 'Escherichia coli O157:H7',
+	href: 'pdf/escherichia-coli.pdf'
 },
 {
-	name: 'Cryptosporidium parvum'
+	name: 'Cryptosporidium parvum',
+	href: 'pdf/cryptosporidium.pdf'
 },
 {
-	name: 'Giardia intestinalis'
+	name: 'Giardia intestinalis',
+	href: 'pdf/giardia.pdf'
 }
 ]
 left2: [
 {
-	name: 'Респираторно-синцитиальный вирус '
+	name: 'Респираторно-синцитиальный вирус ',
+	href: 'pdf/rsv.pdf'
 },
 {
-	name: 'Аденовирус '
+	name: 'Аденовирус ',
+	href: 'pdf/adenovirus-resp.pdf'
 },
 {
-	name: 'Грипп типа А и В'
+	name: 'Грипп типа А и В',
+	href: 'pdf/a-b-grip.pdf'
 },
 {
-	name: 'Стрептококк группы А'
+	name: 'Стрептококк группы А',
+	href: 'pdf/streptokock-a.pdf'
 }
 ]
 right: [
 {
-	name: 'Campylobacter spp.'
+	name: 'Campylobacter spp.',
+	href: 'pdf/campylobacter.pdf'
 },
 {
-	name: 'Listeria monocytogenes'
+	name: 'Listeria monocytogenes',
+	href: 'pdf/listeria.pdf'
 },
 {
-	name: 'Salmonella'
+	name: 'Salmonella',
+	href: 'pdf/salmonella.pdf'
 },
 {
-	name: 'Salmonella typhi '
+	name: 'Salmonella typhi ',
+	href: 'pdf/salmonella_typhi.pdf'
 },
 {
-	name: 'Аденовирус'
+	name: 'Аденовирус',
+	href: 'pdf/adenovirus.pdf'
 },
 {
-	name: 'Ротавирус'
+	name: 'Ротавирус',
+	href: 'pdf/rotavirus.pdf'
 },
 {
-	name: 'Аденовирус и ротавирус'
+	name: 'Аденовирус и ротавирус',
+	href: 'pdf/adenovirus-rotavirus.pdf'
 },
 {
-	name: 'Энтеровирус'
+	name: 'Энтеровирус',
+	href: 'pdf/enterovirus.pdf'
 },
 {
-	name: 'Вирус гепатита А'
+	name: 'Вирус гепатита А',
+	href: 'pdf/virus-gepatit-a.pdf'
 },
 {
-	name: 'Астровирус'
+	name: 'Астровирус',
+	href: 'pdf/astrovirus.pdf'
 }
 ]
 ---
@@ -104,11 +128,11 @@ right: [
 				<div class="two-col__left two-col__left--big">
 					{% for test in left %}
 					<div class="cat-item">
-						<a class="cat-item__prod-link" href="#">
+						<a class="cat-item__prod-link" href="">
 							<i>{{mixins.icon('check')}}</i>
 							{{test.name | safe}}
 						</a>
-						<a class="icon-link icon-link--sm" href="#" download>
+						<a class="icon-link icon-link--sm" href="{{test.href}}" download>
 							<i class="file file--sm">{{mixins.icon('file')}}</i>
 							<span>Инструкция</span>
 						</a>
@@ -124,7 +148,7 @@ right: [
 							<i>{{mixins.icon('check')}}</i>
 							{{test.name | safe}}
 						</a>
-						<a class="icon-link icon-link--sm" href="#" download>
+						<a class="icon-link icon-link--sm" href="{{test.href}}" download>
 							<i class="file file--sm">{{mixins.icon('file')}}</i>
 							<span>Инструкция</span>
 						</a>
@@ -147,7 +171,7 @@ right: [
 							<i>{{mixins.icon('check')}}</i>
 							{{test.name | safe}}
 						</a>
-						<a class="icon-link icon-link--sm" href="#" download>
+						<a class="icon-link icon-link--sm" href="{{test.href}}" download>
 							<i class="file file--sm">{{mixins.icon('file')}}</i>
 							<span>Инструкция</span>
 						</a>

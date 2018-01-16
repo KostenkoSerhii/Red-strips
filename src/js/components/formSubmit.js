@@ -10,7 +10,9 @@ function formSubmit(){
 			url: m_action,
 			data: m_data,
 			success: function(result){ 
-				alert("Спасибо! Наш   менеджер скоро с Вами свяжется.")
+
+				form.reset();
+				openPopup("popup-thanks");
 			}
 		}); 
 	});

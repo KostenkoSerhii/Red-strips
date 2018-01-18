@@ -835,6 +835,7 @@ i.file--sm svg {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 28px;
+  position: relative;
 }
 
 .form__field input, .form__field textarea {
@@ -845,6 +846,7 @@ i.file--sm svg {
   font-weight: 300;
   font-size: 18px;
   padding: 5px 10px;
+  transition: all 0.2s ease;
 }
 
 .form__field input::-webkit-input-placeholder, .form__field textarea::-webkit-input-placeholder {
@@ -857,6 +859,14 @@ i.file--sm svg {
 
 .form__field input::placeholder, .form__field textarea::placeholder {
   color: #000;
+}
+
+.form__field input.error-field, .form__field textarea.error-field {
+  border-color: #e50443;
+}
+
+.form__field input.error-field + .form__error, .form__field textarea.error-field + .form__error {
+  display: block;
 }
 
 .form__field input {
@@ -885,6 +895,22 @@ i.file--sm svg {
   justify-content: space-between;
   -ms-flex-align: start;
   align-items: flex-start;
+}
+
+.form__error {
+  display: none;
+  position: absolute;
+  bottom: -22px;
+  font-size: 14px;
+  color: #e50443;
+  left: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.form__error--centered {
+  text-align: center;
+  left: 52%;
 }
 
 .popup {
@@ -1084,11 +1110,23 @@ i.file--sm svg {
 .advant-block__img {
   height: 87px;
   margin-bottom: 12px;
+  text-align: center;
+  font-size: 0;
+}
+
+.advant-block__img:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
 }
 
 .advant-block__img img {
   max-width: 94px;
   max-height: 87px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .advant-block__lines {
@@ -1583,14 +1621,6 @@ i.file--sm svg {
   top: -3px;
 }
 
-.cat-item__prod-link:hover {
-  color: #b30133;
-}
-
-.cat-item__prod-link:hover i {
-  background: #b30133;
-}
-
 .cat-item .icon-link {
   float: right;
 }
@@ -1802,7 +1832,6 @@ i.file--sm svg {
   .form__field{
     display: block;
     text-align: center;
-    margin-bottom: 20px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -1810,6 +1839,9 @@ i.file--sm svg {
   .form__juctify-line{
     display: block;
     text-align: center;
+  }
+  .form__error--centered{
+    left: 0;
   }
   .popup{
     overflow-y: scroll;

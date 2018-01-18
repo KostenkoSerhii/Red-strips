@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="img/favicon2.png" type="image/png">
     <link rel="stylesheet" media="all" href="css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:100,100i,300,300i,400,500" rel="stylesheet">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"> </head>
@@ -102,9 +103,9 @@
               <div class="two-col">
                 <!--begin two-col__left-->
                 <div class="two-col__left">
-                  <div class="form__field form__field--full"> <input type="text" placeholder="Ваше имя" name="name" pattern="[A-Za-zА-Яа-яЁё]{,20}" required> </div>
-                  <div class="form__field form__field--full"> <input type="text" placeholder="Ваш Email" name="email" pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required> </div>
-                  <div class="form__field form__field--full"> <input type="text" placeholder="Ваш телефон" name="phone" pattern="[\+()]*(?:\d[\s\-\.()xX]*){10,14}" required> </div>
+                  <div class="form__field form__field--full"> <input class="js-form-field" type="text" placeholder="Ваше имя" name="name"> </div>
+                  <div class="form__field form__field--full"> <input class="js-form-field js-form-field-error-text" type="text" placeholder="Ваш Email" name="email"> <span class="form__error js-form-error">Введите E-mail или телефон</span> </div>
+                  <div class="form__field form__field--full"> <input class="js-form-field" type="text" placeholder="Ваш телефон" name="phone"> </div>
                 </div>
                 <!--end two-col__left-->
                 <!--begin two-col__right-->

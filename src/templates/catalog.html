@@ -127,32 +127,14 @@ right: [
 				<!--begin two-col__left-->
 				<div class="two-col__left two-col__left--big">
 					{% for test in left %}
-					<div class="cat-item">
-						<a class="cat-item__prod-link" href="">
-							<i>{{mixins.icon('check')}}</i>
-							{{test.name | safe}}
-						</a>
-						<a class="icon-link icon-link--sm" href="{{test.href}}" download>
-							<i class="file file--sm">{{mixins.icon('file')}}</i>
-							<span>Инструкция</span>
-						</a>
-					</div>
+					{% include "partials/_cat-item.html" %}
 					{% endfor %}
 				</div>
 				<!--end two-col__left-->
 				<!--begin two-col__right-->
 				<div class="two-col__right two-col__right--sm">
 					{% for test in right %}
-					<div class="cat-item">
-						<a class="cat-item__prod-link" href="#">
-							<i>{{mixins.icon('check')}}</i>
-							{{test.name | safe}}
-						</a>
-						<a class="icon-link icon-link--sm" href="{{test.href}}" download>
-							<i class="file file--sm">{{mixins.icon('file')}}</i>
-							<span>Инструкция</span>
-						</a>
-					</div>
+					{% include "partials/_cat-item.html" %}
 					{% endfor %}
 				</div>
 				<!--end two-col__right-->
@@ -166,16 +148,7 @@ right: [
 				<!--begin two-col__left-->
 				<div class="two-col__left two-col__left--big">
 					{% for test in left2 %}
-					<div class="cat-item">
-						<a class="cat-item__prod-link" href="#">
-							<i>{{mixins.icon('check')}}</i>
-							{{test.name | safe}}
-						</a>
-						<a class="icon-link icon-link--sm" href="{{test.href}}" download>
-							<i class="file file--sm">{{mixins.icon('file')}}</i>
-							<span>Инструкция</span>
-						</a>
-					</div>
+					{% include "partials/_cat-item.html" %}
 					{% endfor %}
 				</div>
 				<!--end two-col__left-->
